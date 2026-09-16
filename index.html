@@ -17,7 +17,7 @@
   <div class="side-bottom"><div class="plan"><span>Pro Workspace</span><strong>Đang hoạt động</strong><button onclick="go('pricing')">Quản lý gói</button></div><div class="version">v2.1.0 • Firebase RTDB</div></div>
 </aside>
 <section class="main">
-<header class="header"><button class="mobile-menu" onclick="toggleSide()">☰</button><div class="header-title" id="mobileTitle">Tổng quan</div><input class="search" id="globalSearch" placeholder="Tìm nhanh..." oninput="renderCurrent()"><button onclick="toast('Không có thông báo mới')">🔔</button><button class="profile" onclick="go('settings')"><span class="avatar" id="avatar">N</span><span class="name" id="profileName">Developer</span>⌄</button><button onclick="toggleTheme()">☼</button></header>
+<header class="header"><button class="mobile-menu" onclick="toggleSide()">☰</button><div class="header-title" id="mobileTitle">Tổng quan</div><input class="search" id="globalSearch" placeholder="Tìm nhanh..." oninput="renderCurrent()"><button aria-label="Thông báo" onclick="go('keys')">🔔</button><button class="profile" onclick="go('settings')"><span class="avatar" id="avatar">N</span><span class="name" id="profileName">Developer</span>⌄</button><button onclick="toggleTheme()">☼</button></header>
 <main class="content" id="content"></main>
 </section></div>
 <div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()"><div class="modal" id="modal"></div></div><div class="toast" id="toast"></div>
