@@ -6,3 +6,12 @@
 .light .metric-strip>div,.light .package-card{background:#fff}.light .package-token,.light .package-stats div{background:#f6f7f9}.light .icon-btn{background:#fff}
 @media(max-width:1050px){.package-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.page-head{align-items:flex-start;flex-direction:column}.metric-strip{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr}.form.two{grid-template-columns:1fr}.form .full{grid-column:auto}.modal{max-height:90vh;overflow:auto}}
+.quick-expiry{display:flex;flex-direction:column;gap:9px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface2)}
+.quick-expiry>span{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.quick-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.quick-buttons .secondary{min-height:36px;padding:0 12px}
+.form label small{display:block;margin-top:6px;color:var(--muted);font-size:11px}
+#fKey{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.03em;background:var(--surface2);opacity:.95}
+
+.inline-field{display:flex;gap:8px;align-items:stretch}.inline-field input{flex:1;min-width:0}.inline-field .secondary{white-space:nowrap}
+@media(max-width:640px){.quick-buttons .secondary{flex:1 1 calc(50% - 8px)}.inline-field{flex-direction:column}.inline-field .secondary{width:100%}}
