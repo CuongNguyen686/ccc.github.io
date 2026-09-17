@@ -6,6 +6,9 @@
 <meta name="theme-color" content="#07080c">
 <meta name="description" content="Nguyễn Cường iOS • ChatGPTDeveloper — KeyAuth management dashboard">
 <title>Nguyễn Cường iOS • ChatGPTDeveloper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -17,10 +20,11 @@
   <div class="side-bottom"><div class="plan"><span>Pro Workspace</span><strong>Đang hoạt động</strong><button onclick="go('pricing')">Quản lý gói</button></div><div class="version">v2.1.0 • Firebase RTDB</div></div>
 </aside>
 <section class="main">
-<header class="header"><button class="mobile-menu" onclick="toggleSide()">☰</button><div class="header-title" id="mobileTitle">Tổng quan</div><input class="search" id="globalSearch" placeholder="Tìm nhanh..." oninput="renderCurrent()"><button aria-label="Thông báo" onclick="go('keys')">🔔</button><button class="profile" onclick="go('settings')"><span class="avatar" id="avatar">N</span><span class="name" id="profileName">Developer</span>⌄</button><button onclick="toggleTheme()">☼</button></header>
+<header class="header"><button class="mobile-menu" aria-label="Mở menu" onclick="toggleSide()"><i data-lucide="menu"></i></button><div class="header-title" id="mobileTitle">Tổng quan</div><div class="global-search-wrap"><i data-lucide="search"></i><input class="search" id="globalSearch" placeholder="Tìm nhanh..." oninput="renderCurrent()"><kbd>⌘ K</kbd></div><button class="header-icon" aria-label="Thông báo" onclick="go('keys')"><i data-lucide="bell"></i><span class="notification-dot"></span></button><button class="profile" onclick="go('settings')"><span class="avatar" id="avatar">N</span><span class="name" id="profileName">Developer</span><i data-lucide="chevron-down"></i></button><button class="header-icon" aria-label="Đổi giao diện" onclick="toggleTheme()"><i data-lucide="sun-moon"></i></button></header>
 <main class="content" id="content"></main>
 </section></div>
 <div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()"><div class="modal" id="modal"></div></div><div class="toast" id="toast"></div>
+<script src="https://unpkg.com/lucide@latest" defer></script>
 <script src="./app.js" defer></script>
 </body>
 </html>
